@@ -20,15 +20,15 @@
 
 .bodyDropMenu {
   width: 320px;
-  height: 100%;
+  height: 100vh;
   box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
-  padding-top: 18px;
 }
 
 .headerDropMenu {
   width: 320px;
   height: 51px;
   display: flex;
+  padding-top: 18px;
   align-items: center;
 }
 
@@ -63,17 +63,19 @@
 }
 
 .mainDropMenu {
-  width: 290px;
-  height: 876px;
-  margin-top: 46px;
-  margin-left: 24px;
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .mainDropMenuTopContainer {
   width: 222px;
   height: 416px;
+  padding-left: 24px;
+  margin-top: 45px;
+  margin-bottom: auto;
 }
 
 .mainDropMenuTopContainer__links {
@@ -119,7 +121,7 @@
 .mainDropMenuCenterContainer {
   width: 196px;
   height: 124px;
-  margin-top: 268px;
+  padding-left: 24px;
 }
 
 .mainDropMenuCenterContainer__links {
@@ -175,6 +177,7 @@
   height: 24px;
   margin-top: 40px;
   display: flex;
+  padding-left: 24px;
 }
 
 .lang,
