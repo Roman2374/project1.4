@@ -19,17 +19,19 @@
 }
 
 .bodyDropMenu {
-  width: 320px;
+  max-width: 320px;
   height: 100vh;
   box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
 }
 
 .headerDropMenu {
-  width: 320px;
+  width: 100%;
   height: 51px;
   display: flex;
   padding-top: 18px;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .linkHeader,
@@ -44,22 +46,25 @@
   transition: 0.7s;
 }
 
+.linkHeader {
+}
+
 .headerDropMenu__burger {
-  margin-left: 24px;
-  margin-right: 17px;
   background-image: url(headerImg/burger.svg);
+  margin-left: 24px;
+  margin-right: 16px;
 }
 
 .headerDropMenu__logoCPS {
   width: 97px;
-  height: 100%;
+  height: 51px;
   background-image: url(headerImg/logoCPS.svg);
 }
 
 .headerDropMenu__search {
-  margin-right: 24px;
-  margin-left: 76px;
   background-image: url(headerImg/search.svg);
+  margin-right: 24px;
+  margin-left: auto;
 }
 
 .mainDropMenu {
@@ -72,7 +77,7 @@
 
 .mainDropMenuTopContainer {
   width: 222px;
-  height: 416px;
+  /* height: 416px; */
   padding-left: 24px;
   margin-top: 45px;
   margin-bottom: auto;
@@ -119,7 +124,6 @@
 }
 
 .mainDropMenuCenterContainer {
-  width: 196px;
   height: 124px;
   padding-left: 24px;
 }
@@ -194,4 +198,29 @@
 
 .lang__en {
   margin: 0 7px;
+}
+
+@media (max-width: 258px) {
+  .headerDropMenu__burger {
+    margin-left: 10px;
+  }
+
+  .headerDropMenu__search {
+    margin-right: 10px;
+  }
+}
+
+@media (max-height: 718px) {
+  .mainDropMenuBottomContainer {
+    margin-top: 0;
+  }
+}
+@media (max-height: 678px) {
+  .mainDropMenuTopContainer {
+    margin-top: 20px;
+  }
+
+  .mainDropMenuTopContainer__link {
+    margin-top: 24px;
+  }
 }
