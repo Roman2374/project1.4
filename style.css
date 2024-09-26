@@ -60,7 +60,6 @@
 .headerDropMenu__logoCPS {
   width: 97px;
   height: 51px;
-  background-image: url(headerImg/logoCPS.svg);
 }
 
 .headerDropMenu__search {
@@ -163,6 +162,8 @@
   line-height: 24px;
   letter-spacing: -0.20000000298023224px;
   text-align: left;
+  text-decoration: none;
+  color: black;
 }
 
 .mainDropMenuCenterContainer__tel {
@@ -176,6 +177,8 @@
   line-height: 32px;
   letter-spacing: -0.6000000238418579px;
   text-align: left;
+  text-decoration: none;
+  color: black;
 }
 
 .mainDropMenuBottomContainer {
@@ -224,5 +227,23 @@
 
   .mainDropMenuTopContainer__link {
     margin-top: 24px;
+  }
+
+  .mainDropMenuTopContainer__linkRemont {
+    margin-top: 0;
+  }
+}
+
+@media (max-height: 622px) {
+  .mainDropMenuTopContainer {
+    margin-top: 10px;
+  }
+
+  .mainDropMenuTopContainer__link {
+    margin-top: 18px;
+  }
+
+  .mainDropMenuTopContainer__linkRemont {
+    margin-top: 0;
   }
 }
